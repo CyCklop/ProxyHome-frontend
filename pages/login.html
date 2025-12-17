@@ -3,9 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>ProxyHome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
+
 <body>
-    
+    <header>
+        <nav class="bg-red-600 p-4 flex justify-between fixed w-full drop-shadow-lg z-50">
+            <img src="/assets/img/minilogo.png" alt="minlog" class="h-[50px] w-auto">
+            <ul class="flex flex-row gap-4 text-white mt-[1.5vh] mr-[2vw]">
+                <li><a href="/pages/about.html" class="hover:text-gray-300">Acerca de</a></li>
+                <li><a href="#" class="hover:text-gray-300">🔑Acceder</a></li>
+            </ul>
+        </nav>
+    </header>   
+
+    <main class="pt-[130px] flex justify-center items-center min-h-[80vh]">
+        <div class="flex rounded-lg bg-white p-8 drop-shadow-xl">
+            <div class="flex flex-col gap-4">
+                <h1 class="text-red-500 text-center">Acceder</h1>
+                <input type="text" placeholder="Ingrese username" class="border border-gray-300 rounded p-2">
+                <input type="email" placeholder="Ingrese email" class="border border-gray-300 rounded p-2">
+                <input type="password" placeholder="Ingrese contraseña" class="border border-gray-300 rounded p-2">
+                <button class="bg-red-500 hover:bg-red-700 text-white font-bold py-2 px-4 border border-red-700 rounded">Ingresar</button>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="bg-red-600 p-4 flex justify-start mt-[16vh] text-white">
+            <h4>Nuestro Equipo</h4>
+            <ul class="mt-[5vh]">
+                <li>Ignacio Flores</li>
+                <li>Renato Fuentes</li>
+            </ul>
+        </div>
+    </footer>
 </body>
 </html>
