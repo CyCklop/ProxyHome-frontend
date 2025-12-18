@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProxyHome</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="/scripts/login.js"></script>
+
+    <style>
+        .scrollbar-thin {
+            scrollbar-width: thin;
+        }
+    </style>
+</head>
+
+<body onload="mostrarInfo()">
+    <header>
+        <nav class="bg-red-600 p-4 flex justify-between fixed w-full drop-shadow-lg z-50">
+            <a href="/index.html"><img src="/assets/img/minilogo.png" alt="minlog" class="h-[50px] w-auto"></a>
+            <ul class="flex flex-row gap-4 text-white mt-[1.5vh] mr-[2vw]">
+                <li><a href="/pages/about.html" class="hover:text-gray-300">Acerca de</a></li>
+                <li><a href="/pages/login.html" class="hover:text-gray-300">🔓Cerrar Sesión</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="flex flex-col gap-5 justify-center items-center pt-[120px]">
+        
+        <div class=" p-4 shadow-md w-[50%] rounded-lg">
+            <div class="flex flex-row gap-4">
+                <img src="" alt="userpfp">
+                <h1 id="mostrarNom"></h1>
+            </div>
+
+            <div class="flex flex-col mt-[2vh]">
+                <input type="text" placeholder="Agrega una Bio" class="border border-gray-300 rounded p-2">
+            </div>
+        </div>
+
+        <div class="p-4 shadow-md rounded-lg">
+            <div>
+                <p>test</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+
+
+    </footer>
+</body>
+</html>
